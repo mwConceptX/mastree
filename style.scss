@@ -1,0 +1,88 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.hero {
+    color: white;
+    background-image: url("https://images.unsplash.com/photo-1438109491414-7198515b166b?q=80&fm=jpg&s=cbdabf7a79c087a0b060670a6d79726c");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+
+}
+
+section {
+    position: relative;
+    height: 100vh;
+
+    .container {
+        position: relative;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        overflow: hidden;
+    }
+
+    .row {
+        height: 50%;
+
+        .col {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+    }
+}
+
+#about {
+    overflow: hidden;
+
+    .bg::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 200%;
+        width: 300%;
+        background-color: #ddd;
+        z-index: -10;
+        opacity: .1;
+        transform: rotate(-10deg);
+
+    }
+}
+
+
+
+#testimonials {
+    .bg::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: #ddd;
+        z-index: -10;
+        opacity: .1;
+
+
+    }
+
+    img {
+        border-radius: 50%;
+    }
+}
+
+#gallery {
+    height: auto;
+}
