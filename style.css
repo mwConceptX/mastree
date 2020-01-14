@@ -6,6 +6,24 @@ body {
   overflow-x: hidden;
 }
 
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  h3 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  p {
+    font-size: .9rem;
+  }
+}
+
 .hero {
   color: white;
   background-image: url("https://images.unsplash.com/photo-1438109491414-7198515b166b?q=80&fm=jpg&s=cbdabf7a79c087a0b060670a6d79726c");
@@ -19,6 +37,12 @@ body {
 section {
   position: relative;
   height: 100vh;
+}
+
+@media (max-width: 1024px) {
+  section {
+    height: auto;
+  }
 }
 
 section .container {
@@ -44,7 +68,7 @@ section .row {
   height: 50%;
 }
 
-section .row .col {
+section .row .column {
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -90,6 +114,12 @@ section .row .col {
 
 #testimonials img {
   border-radius: 50%;
+}
+
+@media (max-width: 1024px) {
+  #testimonials img {
+    height: 100px;
+  }
 }
 
 #gallery {

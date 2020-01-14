@@ -1,3 +1,6 @@
+AOS.init();
+
+
 $(".jumbotron").css({
     height: $(window).height() + "px"
 });

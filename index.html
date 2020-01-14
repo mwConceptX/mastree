@@ -12,6 +12,9 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
     <!-- Material Design Bootstrap -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.10.1/css/mdb.min.css" rel="stylesheet">
+    <!-- aos css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- custom css -->
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -54,7 +57,7 @@
 
     <section class="hero jumbotron jumbotron-fluid">
         <div class="container">
-            <h1 class="display-4 p-5">Mastree</h1>
+            <h1 class=" p-5">Mastree</h1>
             <h3>Laserowe wycinanie i grawerowanie.</h3>
         </div>
     </section>
@@ -64,14 +67,16 @@
         <div class="container">
             <h1>O mnie</h1>
             <div class="row">
-                <div class="col col-sm-12 col-md-6 col-lg-4 text-center">
+                <div class="column col-sm-12 col-md-6 col-lg-4 text-center" data-aos="zoom-in-right"
+                    data-aos-easing="ease-in-back" data-aos-delay="000" data-aos-duration="1000">
                     <h1><i class="fa fa-cog" aria-hidden="true"></i></h1>
                     <h3>Tutaj jakis nagłówek numer jeden</h3>
                     <p>Tutaj jakis tekst. Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam cupiditate
                         facilis suscipit ex soluta delectus tempora libero qui obcaecati? Id?</p>
 
                 </div>
-                <div class="col col-sm-12 col-md-6 col-lg-4 text-center">
+                <div class="column col-sm-12 col-md-6 col-lg-4 text-center" data-aos="zoom-in-right"
+                    data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-duration="1000">
                     <h1><i class="fa fa-bell" aria-hidden="true"></i>
 
                     </h1>
@@ -79,7 +84,8 @@
                     <p>Tutaj jakis tekst. Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam cupiditate
                         facilis suscipit ex soluta delectus tempora libero qui obcaecati? Id?</p>
                 </div>
-                <div class="col col-sm-12 col-md-6 col-lg-4 text-center">
+                <div class="column col-sm-12 col-md-6 col-lg-4 text-center" data-aos="zoom-in-right"
+                    data-aos-easing="ease-in-back" data-aos-delay="600" data-aos-duration="1000">
                     <h1> <i class="fa fa-check" aria-hidden="true"></i>
                     </h1>
                     <h3>A tutaj jakis inny nagłówek</h3>
@@ -92,14 +98,13 @@
 
     <section id="offer" class="hero jumbotron jumbotron-fluid">
         <div class="container">
-            <h1 class="display-4 p-5">Oferta</h1>
-            <h3>Witamy na stronie Mastree.</h3>
-            <h4>
+            <h1 class="p-5">Oferta</h1>
+            <p>
                 Firma z siedzibą w Katowicach zajmuje się laserowym wycinaniem oraz grawerowaniem.
                 Świadczymy usługi na indywidualne zamówienie klienta.
                 Posiadamy w ofercie także autorskie produkty które możecie obejrzeć w galerii.
                 Mamy możliwość wykonania graweru w takich materiałach jak drewno, pleksi, hips, gąbka, szkło, skóra,
-                sklejka, korek, laminat grawerski.</h4>
+                sklejka, korek, laminat grawerski.</p>
         </div>
     </section>
 
@@ -108,7 +113,8 @@
         <div class="container">
             <h1>Opinie</h1>
             <div class="row">
-                <div class="col col-sm-12 col-md-6 col-lg-4 text-center">
+                <div class="column col-sm-12 col-md-6 col-lg-4 text-center" data-aos="zoom-in-right"
+                    data-aos-easing="ease-in-back" data-aos-delay="000" data-aos-duration="1000">
                     <div class="img"> <img src="https://picsum.photos/seed/picsum/200/200" alt="">
                     </div>
                     <blockquote class="blockquote text-center">
@@ -117,7 +123,8 @@
                     </blockquote>
 
                 </div>
-                <div class="col col-sm-12 col-md-6 col-lg-4 text-center">
+                <div class="column col-sm-12 col-md-6 col-lg-4 text-center" data-aos="zoom-in-right"
+                    data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-duration="1000">
                     <div class="img"> <img src="https://picsum.photos/seed/picsum/200/200" alt="">
                     </div>
                     <blockquote class="blockquote text-center">
@@ -126,7 +133,8 @@
                     </blockquote>
 
                 </div>
-                <div class="col col-sm-12 col-md-6 col-lg-4 text-center">
+                <div class="column col-sm-12 col-md-6 col-lg-4 text-center" data-aos="zoom-in-right"
+                    data-aos-easing="ease-in-back" data-aos-delay="600" data-aos-duration="1000">
                     <div class="img"> <img src="https://picsum.photos/seed/picsum/200/200" alt="">
                     </div>
                     <blockquote class="blockquote text-center">
@@ -223,15 +231,21 @@
                 <div class="col-md-3 text-center">
                     <ul class="list-unstyled mb-0">
                         <li><i class="fas fa-map-marker-alt fa-2x"></i>
-                            <p>Katowice, Kościuszki 227 40-600, Polska</p>
+                            <a href="https://goo.gl/maps/Zousn4w3RfEyZpbs9" rel="noopener">
+                                <p>Katowice, Kościuszki 227 40-600, Polska</p>
+                            </a>
                         </li>
 
                         <li><i class="fas fa-phone mt-4 fa-2x"></i>
-                            <p>+ 48 794 141 314</p>
+                            <a href="tel:48791141314">
+                                <p>+ 48 794 141 314</p>
+                            </a>
                         </li>
 
                         <li><i class="fas fa-envelope mt-4 fa-2x"></i>
-                            <p>info@mastree.pl</p>
+                            <a href="mailto:info@mastree.pl">
+                                <p>info@mastree.pl</p>
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -401,7 +415,9 @@
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.10.1/js/mdb.min.js">
     </script>
-
+    <!-- aos js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- custom js  -->
     <script src="app.js"></script>
 </body>
 
