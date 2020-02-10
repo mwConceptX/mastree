@@ -1,5 +1,9 @@
 AOS.init();
 
+$('.navbar-collapse a').click(function (e) {
+    $('.navbar-collapse').collapse('toggle');
+});
+
 
 $(".jumbotron").css({
     height: $(window).height() + "px"

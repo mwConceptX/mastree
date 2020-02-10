@@ -7,14 +7,18 @@ body {
 }
 
 h1 {
+    // background-color: rgba($color: #000000, $alpha: 0.3);
+
     @media (max-width:1024px) {
-        font-size: 1.75rem;
+        font-size: 2.0rem;
     }
 }
 
 h3 {
+    // background-color: rgba($color: #000000, $alpha: 0.3);
+
     @media (max-width:1024px) {
-        font-size: 1rem;
+        font-size: 1.25rem;
     }
 }
 
@@ -26,7 +30,7 @@ p {
 
 .hero {
     color: white;
-    background-image: url("https://images.unsplash.com/photo-1438109491414-7198515b166b?q=80&fm=jpg&s=cbdabf7a79c087a0b060670a6d79726c");
+    background-image: url("./bg.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
