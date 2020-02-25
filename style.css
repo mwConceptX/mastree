@@ -1,59 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
   overflow-x: hidden;
-}
-
-h1 {
-  color: black;
-  font-size: 120px;
-  font-weight: 700;
-}
-
-@media (max-width: 1024px) {
-  h1 {
-    font-size: 2.0rem;
-  }
-}
-
-@media (max-width: 1024px) {
-  h3 {
-    font-size: 1.25rem;
-  }
-}
-
-p {
-  color: black;
-}
-
-@media (max-width: 1024px) {
-  p {
-    font-size: .9rem;
-  }
-}
-
-.hero {
-  color: white;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
-  background-attachment: fixed;
-}
-
-.hero::before {
-  content: '';
-  position: absolute;
-  display: block;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-image: url("./bg3.jpg");
-  background-size: cover;
-  opacity: .5;
 }
 
 section {
@@ -102,6 +59,49 @@ section .row .column {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+}
+
+.nav-link:hover {
+  color: #6cbe45 !important;
+}
+
+.hero {
+  color: white;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-attachment: fixed;
+  background-image: url("./sklejka.jpg");
+}
+
+.hero h1 {
+  color: #222;
+  font-size: 120px;
+  font-weight: 700;
+  position: relative;
+}
+
+@media (max-width: 1024px) {
+  .hero h1 {
+    font-size: 2.0rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  h3 {
+    font-size: 1.25rem;
+  }
+}
+
+p {
+  color: black;
+}
+
+@media (max-width: 1024px) {
+  p {
+    font-size: .9rem;
+  }
 }
 
 #about {
